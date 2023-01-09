@@ -1,12 +1,17 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <cabecera></cabecera>
   </div>
 </template>
+
+<script>
+import Cabecera from './/components/Cabecera.vue'
+export default {
+  components: { Cabecera },
+};
+
+
+</script>
 
 <style lang="scss">
 #app {
